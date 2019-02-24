@@ -7,4 +7,4 @@ John Little
 workshop\_flexdashboards
 ------------------------
 
-workshop\_flexdashboards supports an [RFUN](https://rfun.library.duke.edu) [DVS](https://library.duke.edu/data/) workshop for learning how to layout dashboards, add interactivity such as filters and **linked brushing** via HTML Widgets, `crosstalk`
+workshop\_flexdashboards supports an [Rfun](https://rfun.library.duke.edu) [DVS](https://library.duke.edu/data/) workshop for learning how to layout dashboards, add interactivity such as filters and **linked brushing** via HTML Widgets, `crosstalk`

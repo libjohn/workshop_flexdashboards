@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 ## workshop_flexdashboards
 
-workshop_flexdashboards supports an [RFUN](https://rfun.library.duke.edu) [DVS](https://library.duke.edu/data/) workshop for learning how to layout dashboards, add interactivity such as filters and **linked brushing** via HTML Widgets, `crosstalk`
+workshop_flexdashboards supports an [Rfun](https://rfun.library.duke.edu) [DVS](https://library.duke.edu/data/) workshop for learning how to layout dashboards, add interactivity such as filters and **linked brushing** via HTML Widgets, `crosstalk`
 
 
 
