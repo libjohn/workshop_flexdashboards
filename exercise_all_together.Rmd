@@ -1,0 +1,29 @@
+---
+title: "Exercise flexdashboards"
+subtitle:  "Display HTML widgets"
+output: html_document
+---
+
+Start by developing a basic flexdashboard layout then insert plots into columns in your dashboard.   If time exists, generate linked plots with shared data and use at least one crosstalk filter (`filter_slider`, `filter_checkbox`, `filter_select`).  As time allows add other linked HTML widgets.   If you're still here, develop a new dashboard with an alternative layouts.  Add some flexdashboard components:  e.g. gauges or value boxes.
+
+## Get Started
+
+1. Develop a new flexdashboard
+
+    1. File > R Markdown...
+    1. From Template
+    
+        - Template = _Flex Dashboard_
+        
+    1. `O.K.`
+    
+1. Insert plots.  Add Chart titles and captions (`>`)
+1. Make those same plots as [HTML widgets](https://www.htmlwidgets.org/)
+1. Add filters via linked data using `crosstalk::SharedData$new()`
+
+    - `filter_slider`
+    - `filter_checkbox`
+    - `filter_select`
+    
+1. Add other HTML [Widgets that work well](https://rstudio.github.io/crosstalk/widgets.html) with `crosstalk`
+1. Create some new [layout](https://rmarkdown.rstudio.com/flexdashboard/layouts.html) and add some [flexdashboard components](https://rmarkdown.rstudio.com/flexdashboard/using.html#components)
