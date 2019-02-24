@@ -171,10 +171,11 @@ Exercises
 
 ###  
 
-1. [Easy interactive](11_exercise_timeseries.Rmd) ggplot2 via `plotlly::ggplotly()` [**answers**](11_exercise_timeseries_answers.html)
+1. [Easy interactive](11_exercise_timeseries.Rmd) ggplot2 via `plotlly::ggplotly()` -- [**answers**](11_exercise_timeseries_answers.html)
 
-1. [Linked Brushing via Shared Data](12_exercise_crosstalk_map.Rmd)  [**answers*l(12_exercise_crosstalk_map_answers.html)
-1. [Putting it all together](13_exercise_all_together_answers.Rmd) (layouts, shared data, filters, gauges, value boxes)  [**answers**](13_exercise_all_together_answers.html)
+1. [Linked Brushing via Shared Data](12_exercise_crosstalk_map.Rmd) --  [**answers**](12_exercise_crosstalk_map_answers.html)
+
+1. [Putting it all together](13_exercise_all_together_answers.Rmd) (layouts, shared data, filters, gauges, value boxes) --  [**answers**](13_exercise_all_together_answers.html)
 
 Animate
 ==============================================================
