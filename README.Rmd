@@ -1,0 +1,22 @@
+---
+title: "README"
+author: "John Little"
+date: "`r Sys.Date()`"
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## workshop_flexdashboards
+
+workshop_flexdashboards supports an [RFUN](https://rfun.library.duke.edu) [DVS](https://library.duke.edu/data/) workshop for learning how to layout dashboards, add interactivity such as filters and **linked brushing** via HTML Widgets, `crosstalk`
+
+
+
