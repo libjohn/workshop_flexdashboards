@@ -4,6 +4,8 @@ subtitle:  "ggplotly & Time Series"
 output: html_document
 ---
 
+In this exercise the starter code to generate a simple time series plot is provided.  Your task is to make the basic static plot an interactive plot.  Execute the following code.  Fill in the code for the final code chunk below.
+
 ## Library Packages
 
 ```{r}
@@ -36,7 +38,9 @@ duke_2ndround_win_probability
 
 ## Plotly via ggplotly
 
+In the code chunk, below, make the above plot a plotly plot
+
 ```{r}
-ggplotly(duke_2ndround_win_probability)
+
 ```
 

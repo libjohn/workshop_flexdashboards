@@ -4,6 +4,8 @@ subtitle:  "linked brushing with DT & leaflet"
 output: html_document
 ---
 
+In this exercise all the starter code to generate a shared data (linked brushing) plot is provided.  Your task is to make the the shared data object and then generate the two plots.  Execute the following code.  Fill in the code for the final code chunk below.
+
 ## Library Packages
 
 ```{r}
@@ -47,32 +49,35 @@ mapdata_table
 
 ## Crosstalk
 
-make shared data structure
+Fill in the blank in the code chunk, below.  Make a shared data structure with the `map` object generated above.  Assign that to a new object:  `shared_map`.
 
 ```{r}
-shared_map <- SharedData$new(map)
+shared_map <- SharedData$new(___)
 ```
 
 
 ### Rebuild widgets with shared data
 
-Map
+**Make Map**.  Fill in the blanks in the code chunk, below.  Using the shared data object (`shared_map`), generate your leaflet map again.  Assign the new map to a new object name:  `shared_leaf_map`
 
-```{r}
-shared_leaf_map <- shared_map %>% 
+```{r make_map}
+shared_leaf_map <- _______ %>% 
   leaflet(width = "100%") %>% 
   addTiles() %>% 
-  addMarkers(lat = ~Latitude, 
-             lng = ~Longitude, 
-             popup = ~Company)
+  addMarkers(lat = ~____, 
+             lng = ~____, 
+             popup = ~___)
 
 shared_leaf_map
 ```
 
-data table
+**Make Data Table**.  Fill in the blanks in the code chunk, below.  Using the shared data object (`shared_map`), generated your DT data table again.  Assign the new data table to a new object name:  `shared_mapdata_table`
 
-```{r}
-shared_mapdata_table <- datatable(shared_map, extensions="Scroller", style="bootstrap", class="compact", width="100%",
+```{r make_datatable}
+shared_mapdata_table <- datatable(________, extensions="Scroller", 
+                                          style="bootstrap", 
+                                          class="compact", 
+                                          width="100%",
     options=list(deferRender=TRUE, scrollY=300, scroller=TRUE))
 
 shared_mapdata_table
@@ -81,7 +86,9 @@ shared_mapdata_table
 
 ## bscols
 
+Place the two objects you generated in the **Make Map** and  **Make Data Table** code chunks inside the `bscols` (comma separated).  Execute the code chunk.  What does `bscols` do?
+
 ```{r}
-bscols(shared_leaf_map, shared_mapdata_table)
+bscols(,)
 ```
 
