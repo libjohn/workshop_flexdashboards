@@ -24,4 +24,6 @@ Start with the demonstration `index.Rmd`.  Knit that file to generate an example
 
 [Demonstration](https://rfun-flexdashboards.netlify.com/)
 
-[Rstudio.cloud](https://rstudio.cloud/spaces/11680/projects) -- Practice code and preconfigured RStudio workspace
+[**Assignment Code** RStudio.Cloud](https://rstudio.cloud/spaces/11680/join?access_code=3XYpPCbq%2FmX%2Bf0JnBR%2BFBlPmAPD8lcSr5gkscfoK)
+
+[Code Container](https://rstudio.cloud/spaces/11680/projects) -- Practice code and preconfigured RStudio workspace
