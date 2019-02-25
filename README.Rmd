@@ -20,6 +20,7 @@ Code and data in this repository supports an [Rfun](https://rfun.library.duke.ed
 
 Start with the demonstration `index.Rmd`.  Knit that file to generate an example dashboard.  
 
+[Slides](https://rfun-flexdashboards.netlify.com/slides/)
 
 [Demonstration](https://rfun-flexdashboards.netlify.com/)
 
