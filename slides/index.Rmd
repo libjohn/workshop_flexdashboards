@@ -180,7 +180,7 @@ class: duke-green, middle
 
 # Exercise
 
-file:///../13_exercise_all_together_answers.html
+[13_exercise_all_together.Rmd](../13_exercise_all_together_answers.html)
 
 1. library(flexdashboards)
 1. File > R Markdown... ; From Template / Flex Dashboard
