@@ -20,3 +20,5 @@ workshop_flexdashboards supports an [Rfun](https://rfun.library.duke.edu) [DVS](
 
 
 [Demonstration](https://rfun-flexdashboards.netlify.com/)
+
+[Rstudio.cloud](https://rstudio.cloud/spaces/11680/projects) -- Practice code and preconfigured RStudio workspace
