@@ -1,0 +1,249 @@
+---
+title: "Interactive Dashboards"
+subtitle: "HTML Widgets and Brushing"
+author: "John Little"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: 
+      - default
+      - default-fonts
+      - duke-blue
+      - hygge-duke
+      - libs/cc-fonts.css
+      - libs/figure-captions.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(tidyverse)
+library(plotly)
+library(crosstalk)
+```
+
+&nbsp; 
+
+### Intro, Time, Bathrooms, Help
+
+### What to expect in this workshop
+
+- Demonstration
+- Hands-on **practice code**
+- Build a **dashboard** 
+- Generate an **interactive** time series (line plot)
+- Generate **HTML Widgets** that are **linked** (brushing)
+- Discuss **Gauges** and **Value Boxes**
+- Not Use Shiny
+
+---
+background-image: url(https://c2.staticflickr.com/4/3067/3043851839_2537493cf7_o.jpg)
+class: middle, bottom, center
+
+### Just because you can...
+
+
+&nbsp;
+
+.footer-note[.tiny[Image Credit: [Richard Masoner](https://www.flickr.com/photos/bike/3043851839)]]
+
+???
+
+I have an aversion to Shiny
+
+---
+class: middle
+
+## Demonstration
+
+.center[.content-box-yellow[[Flexdashboard](https://rfun-flexdashboards.netlify.com/)]]
+
+## Definitions
+
+.pull-left[Dashboard (`flexdashboard`)
+- layout, info boxes, gauges
+
+Linked Brushing (`crosstalk`)
+- shared data with compatible widgets
+]
+
+.pull-right[HTML Widgets
+- Web enabled client-side interactivity
+- `plotly`, `DT`, `leaflet`, `SummaryWidget` 
+- Gallery of more...
+]
+
+---
+class: duke-softblue, middle, center
+
+# Interactivity
+
+`library(plotly)` with `ggoplot2`
+
+---
+# ggplot2 bar chart
+
+```{r include=FALSE}
+sw_eye <- starwars %>% 
+  filter(eye_color == str_extract(eye_color, "\\w+")) %>% 
+  filter(eye_color != "unknown", eye_color != "hazel", eye_color != "white") %>% 
+  filter(mass < 200) %>% 
+  mutate(eye_color = fct_infreq(eye_color)) %>% 
+  mutate(species = fct_rev(fct_infreq(species)))
+```
+
+.pull-left[
+```{r}
+eyeplot <- sw_eye %>% 
+  ggplot(aes(eye_color)) +
+  geom_bar()
+```
+]
+
+.pull-right[
+```{r}
+eyeplot
+```
+
+]
+
+---
+# Plotly via ggplotly
+
+```{r}
+ggplotly(eyeplot)
+```
+
+---
+class: duke-green, middle, center
+
+# Exercise
+
+`11_exercise_timeseries.Rmd`
+
+---
+class: duke-softblue, middle, center
+
+# Brushing / Linked Data
+
+`library(crosstalk)` & HTML Widgets
+
+---
+class: middle
+
+```{r}
+shared_sw_eye <- SharedData$new(sw_eye)  #<<
+```
+
+
+```{r}
+plot1 <- ggplotly(shared_sw_eye %>% #<<
+            ggplot(aes(eye_color)) +
+                geom_bar())
+
+plot2 <- ggplotly(shared_sw_eye %>% #<<
+            ggplot(aes(x = species)) + 
+                geom_bar() + 
+                coord_flip())
+```
+
+
+---
+.pull-left[
+```{r fig.width=5}
+plot1
+```
+]
+.pull-right[
+```{r fig.width=5}
+plot2
+```
+]
+
+---
+class: duke-green, middle, center
+
+# Exercise
+
+`12_exercise_crosstalk_map.Rmd`
+
+---
+class: duke-softblue, middle, center
+
+# Put It Together 
+
+---
+class: duke-green, middle
+
+# Exercise
+
+file:///../13_exercise_all_together_answers.html
+
+1. library(flexdashboards)
+1. File > R Markdown... ; From Template / Flex Dashboard
+1. Insert plots
+1. Add Chart Titles and captions (`>`)
+1. Make those same plots as HTML Widgets
+1. Add filters via linked data using `crosstalk::SharedData$new()`
+
+    - `filter_slider`
+    - `filter_checkbox`
+    - `filter_select`
+    
+5. Add other [HTML Widgets that work well](https://rstudio.github.io/crosstalk/widgets.html) with `crosstalk`
+6. Creat a new layout and add some flexdashboards components
+
+
+
+---
+
+# John Little
+
+&nbsp;
+
+.pull-left[.full-width[.content-box-green[
+### Data Science Librarian
+
+- https://johnlittle.info/
+
+- https://github.com/libjohn
+]]
+
+### Rfun host...
+You can make **Rfun** with our resources for R and data science analytics.  See the [R we having fun yet‽](https://rfun.library.duke.edu/) resource pages.
+]
+
+.pull-right[.content-box-grey[
+### Duke University
+
+**Data & Visualization Services**
+
+- https://library.duke.edu/data/
+- askData@Duke.edu
+- The /Edge, Bostock (1st Floor)
+- [Past Workshops](https://library.duke.edu/data/news/past-workshops)
+- [Guides & Tutorials](https://library.duke.edu/data/tutorials)
+
+]]
+
+
+
+
+---
+class: center, middle
+## Shareable 
+
+Data, presentation, and handouts 
+
+<span class="cc">
+<!-- Key: a: SA, b: BY, c: CC Circle, d: ND, n: NC, m: Sampling, s: Share, r: Remix, C: CC Full Logo -->
+C bn
+</span>
+
+
+[CC BY-NC license](https://creativecommons.org/licenses/by-nc/4.0/)
+
+
