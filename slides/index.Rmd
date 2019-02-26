@@ -27,6 +27,8 @@ library(crosstalk)
 
 &nbsp; 
 
+.center[GitHub: https://is.gd/dash2019  |  Code Container: https://is.gd/dashwork]
+
 ### Intro, Time, Bathrooms, Help
 
 ### What to expect in this workshop
