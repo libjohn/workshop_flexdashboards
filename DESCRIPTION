@@ -1,0 +1,28 @@
+Type: Compendium
+Package: Compendium title
+Title: Interactive Dashboards - R's flexdashboards workshop
+Version: 0.9.5
+Authors@R: 
+    person(given = "John",
+           family = "Little",
+           role = c("aut", "cre"),
+           email = "John.Little@Duke.edu")
+Description: Code, data, and slides for a workshop on the flexdashboards r package
+License: CC BY-NC
+Depends: 
+    crosstalk,
+    devtools,
+    dplyr,
+    DT,
+    flexdashboard,
+    knitr,
+    leaflet,
+    plotly,
+    rmarkdown,
+    summarywidget,
+    tidyverse,
+    xaringan
+Remotes: 
+    kent37/summarywidget
+Encoding: UTF-8
+LazyData: true

@@ -92,15 +92,21 @@ trump_over_under <- trump %>%
 
 ### via ggplot2
 
-```{r ggplot_trump_score}
-trump_over_under <- ggplot(trump_over_under, aes(x = modeldate, y = score, color = pol_type)) +
+```{r fig.height=4, fig.width=24, include=FALSE}
+ggplot(trump_over_under, aes(x = modeldate, y = score, color = pol_type)) +
   geom_line() +
+  geom_label(data = trump_over_under %>% arrange(desc(modeldate)) %>% 
+              slice((nrow(.)/2):(nrow(.)/2+1)), 
+            aes(x = modeldate, y = score, 
+                             label = str_to_title(str_extract(pol_type, "\\w+(?=_)"))), 
+            color = "black", alpha = 0.3)  +
   scale_color_manual(values = c("forestgreen", "darkorange3"),
                      labels = c("Approve", "Disapprove")) +
+  theme(legend.position = "none") +
   labs(x = "", y = "Approval Rating",
-       color = "", title = "Tump Approval Ratings")
+       title = "Tump Approval Ratings")
 
-ggsave(width = 8, height = 1.6, dpi = 300, "trump_over_under.png")
+ggsave(width = 10, height = 2, dpi = 300, "trump_over_under.png")
 ```
 
 ![](trump_over_under.png "Trump Approval Ratings")
@@ -110,7 +116,20 @@ ggsave(width = 8, height = 1.6, dpi = 300, "trump_over_under.png")
 
 
 ```{r plottly_ggplot_trumpscore}
-ggplotly(trump_over_under) 
+approve_plot <- ggplot(trump_over_under, aes(x = modeldate, y = score, color = pol_type)) +
+  geom_line() +
+  geom_text(data = trump_over_under %>% arrange(desc(modeldate)) %>% 
+              slice((nrow(.)/2):(nrow(.)/2+1)), 
+            aes(x = modeldate, y = score, 
+                             label = str_to_title(str_extract(pol_type, "\\w+(?=_)"))), 
+            color = "black")  +
+  scale_color_manual(values = c("forestgreen", "darkorange3"),
+                     labels = c("Approve", "Disapprove")) +
+  theme(legend.position = "none") +
+  labs(x = "", y = "Approval Rating",
+       title = "Tump Approval Ratings")
+
+ggplotly(approve_plot) 
 ```
 
 >  Data Source:  https://fivethirtyeight.com

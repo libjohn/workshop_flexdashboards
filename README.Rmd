@@ -4,8 +4,17 @@ author: "John Little"
 date: "`r Sys.Date()`"
 output: github_document
 ---
-
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+<!-- Edit the README.Rmd.  Readme.md is auto generated --> 
+
+<!-- badges: start -->
+[![DOI](https://zenodo.org/badge/172369627.svg)](https://zenodo.org/badge/latestdoi/172369627)  
+
+[![Lifecycle Badge](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)  
+
+[![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/libjohn/workshop_flexdashboards/master?urlpath=rstudio)  
+<!-- badges: end -->
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(
