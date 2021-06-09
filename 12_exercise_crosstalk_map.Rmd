@@ -51,7 +51,7 @@ mapdata_table
 
 Fill in the blank in the code chunk, below.  Make a shared data structure with the `map` object generated above.  Assign that to a new object:  `shared_map`.
 
-```{r}
+```{r, eval=FALSE}
 shared_map <- SharedData$new(___)
 ```
 
@@ -60,7 +60,7 @@ shared_map <- SharedData$new(___)
 
 **Make Map**.  Fill in the blanks in the code chunk, below.  Using the shared data object (`shared_map`), generate your leaflet map again.  Assign the new map to a new object name:  `shared_leaf_map`
 
-```{r make_map}
+```{r make_map, eval=FALSE}
 shared_leaf_map <- _______ %>% 
   leaflet(width = "100%") %>% 
   addTiles() %>% 
@@ -73,7 +73,7 @@ shared_leaf_map
 
 **Make Data Table**.  Fill in the blanks in the code chunk, below.  Using the shared data object (`shared_map`), generated your DT data table again.  Assign the new data table to a new object name:  `shared_mapdata_table`
 
-```{r make_datatable}
+```{r make_datatable, eval=FALSE}
 shared_mapdata_table <- datatable(________, extensions="Scroller", 
                                           style="bootstrap", 
                                           class="compact", 
@@ -88,7 +88,7 @@ shared_mapdata_table
 
 Place the two objects you generated in the **Make Map** and  **Make Data Table** code chunks inside the `bscols` (comma separated).  Execute the code chunk.  What does `bscols` do?
 
-```{r}
+```{r, eval=FALSE}
 bscols(,)
 ```
 
