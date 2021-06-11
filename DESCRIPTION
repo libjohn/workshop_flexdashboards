@@ -16,7 +16,7 @@ Depends:
     flexdashboard,
     plotly,
     DT,
-    leaflet
+    leaflet,
     remotes,
     rmarkdown,
     xaringan
