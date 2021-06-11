@@ -1,0 +1,26 @@
+Type: Compendium
+Package: Compendium title
+Title: Flexdashboards code for a hands-on workshop 
+Version: 0.0.1
+Authors@R: 
+    person(given = "John",
+           family = "Little",
+           role = c("aut", "cre"),
+           email = "John.Little@Duke.edu")
+Description: A container that can be used to run code for a flexdashboard workshop
+License: CC BY-NC 4.0
+URL:  https://github.com/libjohn/workshop_flexdashboards
+Depends: 
+    tidyverse,
+    crosstalk,
+    flexdashboard,
+    plotly,
+    DT,
+    leaflet
+    remotes,
+    rmarkdown,
+    xaringan
+Remotes: 
+    kent37/summarywidget
+Encoding: UTF-8
+LazyData: true
