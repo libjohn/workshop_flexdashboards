@@ -11,6 +11,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+remotes::install_github("kent37/summarywidget")
 library(tidyverse)
 library(crosstalk)
 library(flexdashboard)
