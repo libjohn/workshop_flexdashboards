@@ -6,7 +6,8 @@ Authors@R:
     person(given = "John",
            family = "Little",
            role = c("aut", "cre"),
-           email = "John.Little@Duke.edu")
+           email = "John.Little@Duke.edu",
+           comment = c(ORCID = "0000-0002-3600-0972"))
 Description: A container that can be used to run code for a flexdashboard workshop
 License: CC BY-NC 4.0
 URL:  https://github.com/libjohn/workshop_flexdashboards
