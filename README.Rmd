@@ -9,11 +9,15 @@ output: github_document
 <!-- Edit the README.Rmd.  Readme.md is auto generated --> 
 
 <!-- badges: start -->
-[![DOI](https://zenodo.org/badge/172369627.svg)](https://zenodo.org/badge/latestdoi/172369627)  
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4908857 (Latest Version Release)-blue "DOI")](https://doi.org/10.5281/zenodo.4908857)  
 
-[![Lifecycle Badge](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)  
+<!-- https://doi.org/10.5281/zenodo.4908857 10.5281/zenodo.4908857-->
 
-[![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/libjohn/workshop_flexdashboards/master?urlpath=rstudio)
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--3600--0972-A6CE39?logo=ORCID&logoColor=A6CE39 "ORCID")](https://orcid.org/0000-0002-3600-0972)
+
+[![Creative Commons CC BY-NC](https://img.shields.io/badge/Creative Commons-BY--NC-EF9421?logo=creative commons&logoColor=EF9421 "CC BY-NC")](https://creativecommons.org/licenses/by-nc-nd/4.0/)  
+
+[![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg "Launch RStudio Binder")](https://mybinder.org/v2/gh/libjohn/workshop_flexdashboards/master?urlpath=rstudio)
 <!-- badges: end -->
 
 ```{r setup, include = FALSE}

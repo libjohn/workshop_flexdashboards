@@ -1,7 +1,7 @@
 Type: Compendium
-Package: Compendium title
+Package: R Workshop for flexdashboards
 Title: Flexdashboards code for a hands-on workshop 
-Version: 0.9.5
+Version: 1.0.1
 Authors@R: 
     person(given = "John",
            family = "Little",
