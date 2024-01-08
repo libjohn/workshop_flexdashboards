@@ -7,6 +7,8 @@ John Little
 <!-- Edit the README.Rmd.  Readme.md is auto generated -->
 <!-- badges: start -->
 
+![lifecycle superseded](https://img.shields.io/badge/lifecycle-superseded-blue.svg "lifecycle superseded")
+
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4908857%20(Latest%20Version%20Release)-blue "DOI")](https://doi.org/10.5281/zenodo.4908857)
 
 <!-- https://doi.org/10.5281/zenodo.4908857 10.5281/zenodo.4908857-->
