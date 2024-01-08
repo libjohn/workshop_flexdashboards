@@ -24,7 +24,7 @@ Binder](http://mybinder.org/badge_logo.svg "Launch RStudio Binder")](https://myb
 
 ## Workshop: Flexdashboards
 
-With the advent of [Quarto](https://quarto.org), this workshop is superseded ![lifecycle superseded](https://img.shields.io/badge/lifecycle-superseded-blue.svg "lifecycle superseded") by [**Quarto Dashboards**](https://quarto.org/docs/dashboards/).  I strongly recomment you use Quarto dashboards rather than following this legacy workshop code.
+With the advent of [Quarto](https://quarto.org), this workshop is superseded ![lifecycle superseded](https://img.shields.io/badge/lifecycle-superseded-blue.svg "lifecycle superseded") by [**Quarto Dashboards**](https://quarto.org/docs/dashboards/).  I strongly recommend you use Quarto dashboards rather than following this legacy workshop code.
 
 Code and data in this repository supports an
 [Rfun](https://rfun.library.duke.edu)
